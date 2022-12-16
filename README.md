@@ -1,2 +1,0 @@
-# rishabh-resume
- Rishabh Portfolio
