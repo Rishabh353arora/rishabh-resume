@@ -21,7 +21,7 @@
 .general-info {
     display: flex;
     flex-direction: column;
-    background-image: url("images/banner.avif");
+    background-image: url("../images/banner.avif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -311,20 +311,27 @@ table {
         background-color: #ff9a00;
     }
 }
+
 @media only screen and (min-width:400px) and (max-width: 1024px) {
-    .personal-details table tr .data{
+    .personal-details table tr .data {
         font-size: 14px;
     }
-    .basic-info, .academic-heading, .educational-qualification-heading, .contact-me-heading {
+
+    .basic-info,
+    .academic-heading,
+    .educational-qualification-heading,
+    .contact-me-heading {
         text-align: center;
         font-family: 'Dancing Script', cursive;
         font-size: 22px;
         font-weight: 400;
     }
-    .hr-3{
+
+    .hr-3 {
         width: 230px;
     }
-    .hr-4{
+
+    .hr-4 {
         width: 200px;
     }
 }
@@ -334,9 +341,10 @@ table {
 /* education section start  */
 .education {
     display: row;
-    background-image: url("images/laptop.jfif");
+    background-image: url("../images/laptop.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    color: #ffffff
 }
 
 
@@ -418,55 +426,71 @@ table {
     flex: 4;
     height: 100px;
 }
+
 @media only screen and (max-width: 400px) {
-    .mynewclass{
+    .mynewclass {
         display: row;
-        
     }
-    .qualification-2,.qualification-1{
+
+    .qualification-2,
+    .qualification-1 {
         height: 80px;
-        left:0px !important;
-        animation:none;
+        left: 0px !important;
+        animation: none;
     }
-    .qualification-2 h1,.qualification-1 h1{
+
+    .qualification-2 h1,
+    .qualification-1 h1 {
         font-size: 15px;
     }
 
-    .qual-year{
+    .qual-year {
         height: 80px;
     }
-    
-    .qual-year p{
+
+    .qual-year p {
         font-size: 12px;
     }
 }
 
 @media only screen and (min-width:400px) and (max-width: 1024px) {
-    .mynewclass{
+    .mynewclass {
         display: row;
-        
+
     }
-    .qualification-2,.qualification-1{
-        left:0px !important;
-        animation:none;
+
+    .qualification-2,
+    .qualification-1 {
+        left: 0px !important;
+        animation: none;
     }
-    
+
 }
 
 /* education section end  */
 /* contact section start  */
-.contact-section {
+#contact-section {
     display: row;
 }
 
-.contact-section .fullbox {
+label {
+    padding-left: 10px;
+}
+
+#contact-section .fullbox {
     display: flex;
     height: 70px;
 }
 
-.contact-section .fullbox-textarea {
+#contact-section .fullbox-empty {
+    height: 20px;
+}
+
+#contact-section .fullbox-textarea {
     display: flex;
     height: 150px;
+    /* margin-bottom: 30px; */
+
 }
 
 .form-box {
@@ -479,6 +503,8 @@ table {
     flex: 1;
     flex-direction: column;
     height: 150px;
+    margin-bottom: 10px;
+
 }
 
 input[type=text],
@@ -488,6 +514,7 @@ input[type=number] {
     padding: 10px;
     border-radius: 25px;
     margin-bottom: 15px;
+    border: 1px solid #000;
 }
 
 input[type=radio] {
@@ -495,6 +522,8 @@ input[type=radio] {
     margin-top: 10px;
     margin-bottom: 20px;
     transform: scale(1.5);
+    border: 1px solid #000;
+
 }
 
 textarea {
@@ -503,6 +532,8 @@ textarea {
     border-radius: 25px;
     margin-bottom: 15px;
     /* font-family: 'Dancing Script', cursive; */
+    border: 1px solid #000;
+
 }
 
 .contact-me-heading h2 {
@@ -513,6 +544,7 @@ textarea {
 
 .submit-button {
     width: 100%;
+    border: none;
     height: 50px;
     background-color: #081e3f;
     color: #f0f8ff;
@@ -521,18 +553,136 @@ textarea {
     transition: 3s;
     justify-content: center;
 }
-.mynewclass{
-    width:100%; 
+
+.mynewclass {
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-@media only screen and (min-width:400px) and (max-width: 1024px) {
-    .contact-section .fullbox,.contact-section .fullbox-textarea{
+@media only screen and (max-width: 1024px) {
+
+    #contact-section .fullbox,
+    #contact-section .fullbox-textarea {
         display: row !important;
-        
-    }   
-    
+        /* margin-bottom: 20px; */
+    }
+
+    #contact-section .fullbox-empty {
+        height: 40px;
+    }
+
+    .submit-button {
+        width: 97%;
+        border: none;
+        height: 50px;
+        background-color: #081e3f;
+        color: #f0f8ff;
+        font-size: 25px;
+        border-radius: 10px;
+        transition: 3s;
+        justify-content: center;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=number] {
+        width: 90%;
+        padding: 10px;
+        border-radius: 25px;
+        margin-bottom: 15px;
+        border: 1px solid #000;
+
+    }
+
+    input[type=radio] {
+        /* width: 90%; */
+        margin-top: 10px;
+        margin-bottom: 20px;
+        transform: scale(1.5);
+        border: 1px solid #000;
+
+    }
+
+    textarea {
+        width: 90%;
+        padding: 10px;
+        border-radius: 25px;
+        margin-bottom: 15px;
+        /* font-family: 'Dancing Script', cursive; */
+        border: 1px solid #000;
+
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 786px) {
+
+    #contact-section .fullbox,
+    #contact-section .fullbox-textarea {
+        display: flex;
+        flex-direction: column !important;
+        /* margin-bottom: 10px; */
+    }
+
+    #contact-section .fullbox-empty {
+        height: 40px;
+    }
+
+    #contact-section .fullbox {
+        height: 140px;
+    }
+
+    #contact-section .fullbox-textarea {
+        height: 300px;
+        /* margin-bottom:25px ; */
+    }
+
+    #contact-section #btn-fullbox {
+        height: 70px;
+        /* margin-top:20px; */
+    }
+
+    .submit-button {
+        width: 97%;
+        border: none;
+        height: 50px;
+        background-color: #081e3f;
+        color: #f0f8ff;
+        font-size: 25px;
+        border-radius: 10px;
+        transition: 3s;
+        justify-content: center;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=number] {
+        width: 90%;
+        padding: 10px;
+        border-radius: 25px;
+        margin-bottom: 15px;
+        border: 1px solid #000;
+
+    }
+
+    input[type=radio] {
+        /* width: 90%; */
+        margin-top: 10px;
+        margin-bottom: 20px;
+        transform: scale(1.5);
+        border: 1px solid #000;
+
+    }
+
+    textarea {
+        width: 90%;
+        padding: 10px;
+        border-radius: 25px;
+        margin-bottom: 15px;
+        /* font-family: 'Dancing Script', cursive; */
+        border: 1px solid #000;
+
+    }
 }
 
 /* contact section end  */
@@ -548,7 +698,7 @@ textarea {
 
     .footer h2 {
         font-family: 'Dancing Script', cursive;
-        font-size: 30px;
+        font-size: 20px;
         line-height: 50px;
         font-weight: 500;
         color: #ffffff;
@@ -566,11 +716,11 @@ textarea {
         padding-top: 20px;
     }
 
-    .footer p,
+    .footer .footer-mid p,
     .footer span {
         padding-left: 20px;
         color: #ffffff;
-        font-size: 20px;
+        font-size: 10px;
         padding-top: 20px;
         display: inline;
         text-align: justify;
@@ -614,7 +764,7 @@ textarea {
 
     .footer h2 {
         font-family: 'Dancing Script', cursive;
-        font-size: 30px;
+        font-size: 20px;
         line-height: 50px;
         font-weight: 500;
         color: #ffffff;
@@ -628,15 +778,15 @@ textarea {
     .footer i {
         padding-left: 20px;
         color: #ffffff;
-        font-size: 30px;
+        font-size: 20px;
         padding-top: 20px;
     }
 
-    .footer p,
+    .footer .footer-mid p,
     .footer span {
         padding-left: 20px;
         color: #ffffff;
-        font-size: 20px;
+        font-size: 15px;
         padding-top: 20px;
         display: inline;
         text-align: justify;
@@ -680,7 +830,7 @@ textarea {
 
     .footer h2 {
         font-family: 'Dancing Script', cursive;
-        font-size: 30px;
+        font-size: 20px;
         line-height: 50px;
         font-weight: 500;
         color: #ffffff;
@@ -694,15 +844,15 @@ textarea {
     .footer i {
         padding-left: 20px;
         color: #ffffff;
-        font-size: 30px;
+        font-size: 20px;
         padding-top: 20px;
     }
 
-    .footer p,
+    .footer .footer-mid p,
     .footer span {
         padding-left: 20px;
         color: #ffffff;
-        font-size: 20px;
+        font-size: 15px;
         padding-top: 20px;
         display: inline;
         text-align: justify;
@@ -723,8 +873,13 @@ textarea {
         max-width: 30%;
     }
 
-    .footer-end .p {
+    .footer-end p {
         text-align: justify;
+        color: #ffffff;
+    }
+
+    .footer-end h2 {
+        padding-left: 0px;
     }
 
     .bottom-footer {
@@ -737,17 +892,29 @@ textarea {
 }
 
 .bottom-footer h6 {
-    font-size: 20px;
+    font-size: 15px;
     color: #ffffff;
     padding-top: 20px;
 }
 
 @media only screen and (min-width:400px) and (max-width: 1024px) {
-    iframe{
-        width:325px;    
-    }   
-    
+    iframe {
+        width: 325px;
+    }
+
+    .footer-end p {
+        text-align: justify;
+        color: #ffffff;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+
+    .footer-end h2 {
+        padding-left: 20px;
+    }
+
 }
+
 /* footer section end  */
 
 /* form validation style start  */
