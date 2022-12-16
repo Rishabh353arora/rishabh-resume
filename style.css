@@ -1,0 +1,769 @@
+/* google fonts link  */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Diplomata+SC&family=Great+Vibes&family=La+Belle+Aurore&family=Playfair+Display:ital@1&family=Rubik+Distressed&display=swap');
+
+/* pseudo select for entire page  */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* whole webpage class  */
+.container {
+    width: 95%;
+    height: auto;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    /* background-color: green; */
+    position: absolute;
+}
+
+/* general info section start  */
+.general-info {
+    display: flex;
+    flex-direction: column;
+    background-image: url("images/banner.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    align-items: center;
+}
+
+.user-image {
+    width: 200px;
+}
+
+.user-name {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+}
+
+.designation {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: 500;
+}
+
+.sub-title {
+    font-size: 15px;
+}
+
+.buttons {
+    margin-bottom: 30px;
+}
+
+.resume-button {
+    width: 130px;
+    height: 50px;
+    background-color: #ffffff;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 2s;
+}
+
+.resume-button:hover {
+    background-color: #081e3f;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    transition: 2s;
+}
+
+.contact-button {
+    width: 130px;
+    height: 50px;
+    background-color: #4c5f7a;
+    border-radius: 100px;
+    margin-left: 20px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 2s;
+}
+
+.contact-button:hover {
+    color: #081e3f;
+    border: 1px solid #081e3f;
+    background-color: #ffffff;
+    transition: 2s;
+}
+
+/* general-info section end  */
+
+/* about , academy basic information start */
+.infographic-section {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 1024px) {
+    .infographic-section {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 400px) {
+    .infographic-section {
+        flex-direction: column;
+    }
+}
+
+.about-me-left {
+    box-shadow: 0px 0px 5px #1b262c;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border: 2px solid #081e3f;
+    transition: 2s;
+    background-color: #081e3f;
+    color: #ffffff;
+}
+
+.about-me-left:hover {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.about-me-right {
+    box-shadow: 0px 0px 5px #1b262c;
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border: 2px solid #081e3f;
+    transition: 3s;
+}
+
+.about-me-right:hover {
+    background-color: #081e3f;
+    color: #ffffff;
+}
+
+.infographic-section div {
+    flex: 50%;
+    margin: 10px;
+    max-height: fit-content;
+}
+
+@media (max-width:400px) {
+    .infographic-section div {
+        flex: 100%;
+        margin: 10px;
+        /* height: 400px; */
+    }
+
+    .infographic-section div .about-me-left {
+        height: 400px;
+    }
+}
+
+.basic-info,
+.academic-heading,
+.educational-qualification-heading,
+.contact-me-heading {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+@media (max-width:400px) {
+    .academic-heading {
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+        font-size: 15px;
+        font-weight: 400;
+    }
+}
+
+.hr-1 {
+    width: 170px;
+    background-color: #000;
+    height: 1px;
+    margin: auto;
+}
+
+.hr-2 {
+    width: 140px;
+    background-color: #000;
+    height: 1px;
+    margin: auto;
+    margin-top: 3px;
+}
+
+.hr-3 {
+    width: 270px;
+    background-color: #000;
+    height: 1px;
+    margin: auto;
+}
+
+.hr-4 {
+    width: 240px;
+    background-color: #000;
+    height: 1px;
+    margin: auto;
+    margin-top: 3px;
+}
+
+.personal-details {
+    margin-bottom: 50px;
+}
+
+table {
+    width: 85%;
+    margin: auto;
+}
+
+.personal-details table tr .heading {
+    text-transform: uppercase;
+    line-height: 15px;
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: 'Playfair Display', serif;
+}
+
+.personal-details table tr .data {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+
+.about-me-text {
+    padding: 20px;
+    text-align: justify;
+}
+
+.skills {
+    padding-left: 20px;
+    text-shadow: 0px 0px 3px #586870;
+    letter-spacing: 2px;
+}
+
+.skill-div {
+    width: 90%;
+    height: 20px;
+}
+
+.html-skill {
+    background-color: #3a0088;
+    width: 90%;
+    border-radius: 50px;
+    animation: html-skill 5s infinite 2s;
+}
+
+@keyframes html-skill {
+    from {
+        width: 0px;
+        background-color: #d8c8f3;
+    }
+
+    to {
+        width: 90%;
+        background-color: #3a0088
+    }
+}
+
+.html-skill p,
+.css-skill p,
+.js-skill p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+}
+
+.css-skill {
+    width: 80%;
+    background-color: #930077;
+    border-radius: 50px;
+    animation: css-skill 5s infinite 2s;
+}
+
+@keyframes css-skill {
+    from {
+        width: 0px;
+        background-color: #000000;
+    }
+
+    to {
+        width: 80%;
+        background-color: #930077;
+    }
+}
+
+.js-skill {
+    width: 85%;
+    background-color: #ff9a00;
+    border-radius: 50px;
+    animation: js-skill 5s infinite 2s;
+}
+
+@keyframes js-skill {
+    from {
+        width: 0px;
+        background-color: #f0dbbb;
+    }
+
+    to {
+        width: 85%;
+        background-color: #ff9a00;
+    }
+}
+@media only screen and (min-width:400px) and (max-width: 1024px) {
+    .personal-details table tr .data{
+        font-size: 14px;
+    }
+    .basic-info, .academic-heading, .educational-qualification-heading, .contact-me-heading {
+        text-align: center;
+        font-family: 'Dancing Script', cursive;
+        font-size: 22px;
+        font-weight: 400;
+    }
+    .hr-3{
+        width: 230px;
+    }
+    .hr-4{
+        width: 200px;
+    }
+}
+
+/* about , academy basic information end */
+
+/* education section start  */
+.education {
+    display: row;
+    background-image: url("images/laptop.jfif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+/* .education :first-child {
+    flex: 1;
+} */
+
+.educational-qualification-heading {
+    color: #ffffff;
+    padding: 10px 0px 10px 0px;
+}
+
+.qualification-1,
+.qualification-2 {
+    display: flex;
+    max-width: 500px;
+    height: 100px;
+    box-shadow: 0px 0px 5px #f0f8ff;
+    background-color: rgba(240, 248, 255, 0.4);
+    border-radius: 100px;
+    position: relative;
+    left: 20px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    animation: animation1 4s ease-in-out;
+
+}
+
+@keyframes animation1 {
+    0% {
+        left: -650px;
+    }
+
+    100% {
+        left: 20px;
+    }
+}
+
+.qualification-2 {
+    left: 500px;
+    animation: animation2 4s ease-in-out;
+}
+
+@keyframes animation2 {
+    0% {
+        left: -650px;
+    }
+
+    100% {
+        left: 500px;
+    }
+}
+
+.qual-year {
+    flex: 1;
+    height: 100px;
+    background-color: #ffbd39;
+    border-radius: 999px;
+}
+
+.qual-year p {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 17px;
+    font-weight: 400;
+    padding-top: 15px
+}
+
+.qual-details .supervision {
+    padding-top: 10px;
+}
+
+.qual-details .supervision span {
+    color: #f0103d;
+    text-shadow: 0px 0px 5px white;
+}
+
+.qual-details {
+    flex: 4;
+    height: 100px;
+}
+@media only screen and (max-width: 400px) {
+    .mynewclass{
+        display: row;
+        
+    }
+    .qualification-2,.qualification-1{
+        height: 80px;
+        left:0px !important;
+        animation:none;
+    }
+    .qualification-2 h1,.qualification-1 h1{
+        font-size: 15px;
+    }
+
+    .qual-year{
+        height: 80px;
+    }
+    
+    .qual-year p{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width: 1024px) {
+    .mynewclass{
+        display: row;
+        
+    }
+    .qualification-2,.qualification-1{
+        left:0px !important;
+        animation:none;
+    }
+    
+}
+
+/* education section end  */
+/* contact section start  */
+.contact-section {
+    display: row;
+}
+
+.contact-section .fullbox {
+    display: flex;
+    height: 70px;
+}
+
+.contact-section .fullbox-textarea {
+    display: flex;
+    height: 150px;
+}
+
+.form-box {
+    flex: 1;
+    flex-direction: column;
+    height: 70px;
+}
+
+.fullbox-textarea .form-box {
+    flex: 1;
+    flex-direction: column;
+    height: 150px;
+}
+
+input[type=text],
+input[type=email],
+input[type=number] {
+    width: 95%;
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+
+input[type=radio] {
+    /* width: 95%; */
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transform: scale(1.5);
+}
+
+textarea {
+    width: 95%;
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    /* font-family: 'Dancing Script', cursive; */
+}
+
+.contact-me-heading h2 {
+    align-items: center;
+    display: row;
+    flex-direction: column;
+}
+
+.submit-button {
+    width: 100%;
+    height: 50px;
+    background-color: #081e3f;
+    color: #f0f8ff;
+    font-size: 25px;
+    border-radius: 10px;
+    transition: 3s;
+    justify-content: center;
+}
+.mynewclass{
+    width:100%; 
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width:400px) and (max-width: 1024px) {
+    .contact-section .fullbox,.contact-section .fullbox-textarea{
+        display: row !important;
+        
+    }   
+    
+}
+
+/* contact section end  */
+
+/* footer section start  */
+@media (max-width: 400px) {
+    .footer {
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+        background-image: linear-gradient(to right, #021E67, #33013E);
+    }
+
+    .footer h2 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 30px;
+        line-height: 50px;
+        font-weight: 500;
+        color: #ffffff;
+        padding-left: 20px;
+    }
+
+    .footer .footer-start iframe {
+        margin-left: 20px;
+    }
+
+    .footer i {
+        padding-left: 20px;
+        color: #ffffff;
+        font-size: 30px;
+        padding-top: 20px;
+    }
+
+    .footer p,
+    .footer span {
+        padding-left: 20px;
+        color: #ffffff;
+        font-size: 20px;
+        padding-top: 20px;
+        display: inline;
+        text-align: justify;
+    }
+
+    .footer .footer-start {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .footer .footer-mid {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .footer .footer-end {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .footer-end .p {
+        text-align: justify;
+    }
+
+    .bottom-footer {
+        display: flex;
+        justify-content: center;
+        height: 50px;
+        background-image: linear-gradient(to right, #33013E, #021E67);
+        border-top: 1px solid #ffffff;
+    }
+}
+
+@media (min-width: 400px) and (max-width:1024px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        background-image: linear-gradient(to right, #021E67, #33013E);
+    }
+
+    .footer h2 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 30px;
+        line-height: 50px;
+        font-weight: 500;
+        color: #ffffff;
+        padding-left: 20px;
+    }
+
+    .footer .footer-start iframe {
+        margin-left: 20px;
+    }
+
+    .footer i {
+        padding-left: 20px;
+        color: #ffffff;
+        font-size: 30px;
+        padding-top: 20px;
+    }
+
+    .footer p,
+    .footer span {
+        padding-left: 20px;
+        color: #ffffff;
+        font-size: 20px;
+        padding-top: 20px;
+        display: inline;
+        text-align: justify;
+    }
+
+    .footer .footer-start {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .footer .footer-mid {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .footer .footer-end {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .footer-end .p {
+        text-align: justify;
+    }
+
+    .bottom-footer {
+        display: flex;
+        justify-content: center;
+        height: 50px;
+        background-image: linear-gradient(to right, #33013E, #021E67);
+        border-top: 1px solid #ffffff;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer {
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+        background-image: linear-gradient(to right, #021E67, #33013E);
+    }
+
+    .footer h2 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 30px;
+        line-height: 50px;
+        font-weight: 500;
+        color: #ffffff;
+        padding-left: 20px;
+    }
+
+    .footer .footer-start iframe {
+        margin-left: 20px;
+    }
+
+    .footer i {
+        padding-left: 20px;
+        color: #ffffff;
+        font-size: 30px;
+        padding-top: 20px;
+    }
+
+    .footer p,
+    .footer span {
+        padding-left: 20px;
+        color: #ffffff;
+        font-size: 20px;
+        padding-top: 20px;
+        display: inline;
+        text-align: justify;
+    }
+
+    .footer .footer-start {
+        width: 100%;
+        max-width: 35%;
+    }
+
+    .footer .footer-mid {
+        width: 100%;
+        max-width: 35%;
+    }
+
+    .footer .footer-end {
+        width: 100%;
+        max-width: 30%;
+    }
+
+    .footer-end .p {
+        text-align: justify;
+    }
+
+    .bottom-footer {
+        display: flex;
+        justify-content: center;
+        height: 50px;
+        background-image: linear-gradient(to right, #33013E, #021E67);
+        border-top: 1px solid #ffffff;
+    }
+}
+
+.bottom-footer h6 {
+    font-size: 20px;
+    color: #ffffff;
+    padding-top: 20px;
+}
+
+@media only screen and (min-width:400px) and (max-width: 1024px) {
+    iframe{
+        width:325px;    
+    }   
+    
+}
+/* footer section end  */
+
+/* form validation style start  */
+#error_message {
+    font: 500;
+    color: #cf6666;
+    font-size: 20px;
+    background-color: #081e3f;
+}
+
+#postalcode {
+    text-transform: uppercase;
+}
+
+#hourly_price_div {
+    display: none;
+}
+
+/* form validation style end  */

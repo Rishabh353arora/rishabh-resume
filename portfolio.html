@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishabh Arora Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Top section - general information start  -->
+        <header>
+            <div class="general-info">
+                <div>
+                    <img src="https://sialifehospital.com/wp-content/uploads/2021/04/testimonial-1.png"
+                        alt="user-profile" class="user-image">
+                </div>
+                <div>
+                    <h1 class="user-name">Rishabh Arora</h1>
+                </div>
+                <div>
+                    <p class="designation">Web Developer, <small class="sub-title">Software Engineer</small></p>
+                </div>
+                <div class="buttons">
+                    <button type="submit" class="resume-button" onclick="print()"> <i class="fa fa-download"></i> Resume
+                    </button>
+                    <a href="#contact-section"><button type="submit" class="contact-button"> <i class="fa fa-phone"></i>
+                            Contact Me </button></a>
+                </div>
+            </div>
+        </header>
+        <!-- Top section - general information end  -->
+        <!-- Infographic Section Start -->
+        <section>
+            <div class="infographic-section">
+                <!-- basic info start  -->
+                <div>
+                    <div class="about-me-left">
+                        <h1 class="basic-info">Basic Information</h1>
+                        <hr class="hr-1">
+                        <hr class="hr-2">
+                        <div class="personal-details">
+                            <table>
+                                <tr>
+                                    <td class="heading"> Name </td>
+                                    <td class="data"> <i class="fa fa-user"></i> Rishabh Arora </td>
+                                </tr>
+                                <tr>
+                                    <td class="heading"> Student ID </td>
+                                    <td class="data"> <i class="fa fa-id-card"></i> 172242216</td>
+                                </tr>
+                                <tr>
+                                    <td class="heading"> Email </td>
+                                    <td class="data"> <i class="fa fa-envelope"></i> rarora64@myseneca.ca</td>
+                                </tr>
+                                <tr>
+                                    <td class="heading"> Course </td>
+                                    <td class="data"> <i class="fa fa-graduation-cap"></i> Computer Programming </td>
+                                </tr>
+                                <tr>
+                                    <td class="heading"> Class Section </td>
+                                    <td class="data"> <i class="fa fa-list-alt"></i> ZBB </td>
+                                </tr>
+                                <tr>
+                                    <td class="heading"> Age </td>
+                                    <td class="data"> <i class="fa fa-calendar"></i> 19 </td>
+                                </tr>
+                                <tr>
+                                    <td class="heading"> Language </td>
+                                    <td class="data"> <i class="fa fa-language"></i> English, Punjabi, Hindi </td>
+                                </tr>
+                                <tr>
+                                    <td class="heading"> Instructor </td>
+                                    <td class="data"> <i class="fa fa-user-o"></i> Mark Merit </td>
+                                </tr>
+                                <tr>
+                                    <td class="heading"> Date </td>
+                                    <td class="data"> <i class="fa fa-calendar-o"></i> 14 Decemeber, 2022 </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- basic info end  -->
+                <!-- about and academy start  -->
+                <div>
+                    <div class="about-me-right">
+                        <h1 class="academic-heading">About me & Academic Honesty</h1>
+                        <hr class="hr-3">
+                        <hr class="hr-4">
+                        <p class="about-me-text">Hardworking and reliable individual with strong ability in customer
+                            service and logistics. Highly organized, proactive and punctual with team-oriented mentality
+                            seeking a fastpaced work environment where I can challenge myself and enhance my skills.</p>
+
+                        <h1 class="skills">Technical Skills</h1>
+                        <div class="skill-div">
+                            <div class="html-skill">
+                                <p>HTML</p>
+                            </div>
+                        </div>
+                        <div class="skill-div">
+                            <div class="css-skill">
+                                <p>CSS</p>
+                            </div>
+                        </div>
+                        <div class="skill-div">
+                            <div class="js-skill">
+                                <p>JavaScript</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- about and academy end  -->
+
+            </div>
+        </section>
+        <!-- Infographic Section End -->
+        <!-- Education Section Start  -->
+        <section  class="education">
+                <div>
+                    <h1 class="educational-qualification-heading">Educational Qualification</h1>
+                </div>
+                <div class="mynewclass">
+                    <div class="qualification-1">
+                        <div class="qual-year">
+                            <p>2022</p>
+                            <p>Higher <br> Study</p>
+                        </div>
+                        <div class="qual-details">
+                            <h1>Pursuing computer programming</h1>
+                            <h5>SENECA COLLEGE</h5>
+                            <h5 class="supervision">Under the supervision of <span> Mr. Mark Merit</span></h5>
+                            <h6>Best Teacher in Computer Programming</h6>
+                        </div>
+                    </div>
+                    <div class="qualification-2">
+                        <div class="qual-year">
+                            <p>2022</p>
+                            <p>Higher <br> Study</p>
+                        </div>
+                        <div class="qual-details">
+                            <h1>Pursuing computer programming</h1>
+                            <h5>SENECA COLLEGE</h5>
+                            <h5 class="supervision">Under the supervision of <span> Mr. Mark Merit</span></h5>
+                            <h6>Best Teacher in Computer Programming</h6>
+                        </div>
+                    </div>
+                </div>
+                <div>
+            </div>
+        </section>
+        <!-- Education Section End  -->
+
+        <!-- Contact section start  -->
+        <section id="contact-section">
+            
+                <h2 class="contact-me-heading">Contact Me</h2>
+                <p id="error_message"></p>
+                <form method="post" action="https://httpbin.org/post" id="contactform" onsubmit="return submitform()">
+                    <div class="fullbox">
+                        <div class="form-box">
+                            <label for="name">Name*</label>
+                            <input type="text" name="name" placeholder="Enter Your Name" id="name" required>
+                        </div>
+                        <div class="form-box">
+                            <label for="email">Email*</label>
+                            <input type="email" name="email" placeholder="Enter Your Email" id="email" required>
+                        </div>
+                    </div>
+                    <div class="fullbox">
+                        <div class="form-box">
+                            <label for="address">Address*</label>
+                            <input type="text" name="address" placeholder="Enter Your Address" id="address" required>
+                        </div>
+                        <div class="form-box">
+                            <label for="city">City*</label>
+                            <input type="text" name="city" placeholder="Enter Your City" list="city" id="mycity"
+                                required>
+                            <datalist id="city">
+                                <option>Alberta</option>
+                                <option>British Columbia</option>
+                                <option>Manitoba</option>
+                                <option>New Brunswick</option>
+                                <option>Newfoundland and Labrador</option>
+                                <option>Nova Scotia</option>
+                                <option>Ontario</option>
+                                <option>Prince Edward Island</option>
+                                <option>Quebec</option>
+                                <option>Saskatchewan</option>
+                                <option>Northwest Territories</option>
+                                <option>Nunavut</option>
+                                <option>Yukon</option>
+                            </datalist>
+                        </div>
+                    </div>
+                    <div class="fullbox">
+                        <div class="form-box">
+                            <label for="postalcode">Postal Code*</label>
+                            <input type="text" name="postalcode" placeholder="Enter Your Postal Code" id="postalcode"
+                                onblur="postalcodecheck()" required>
+                        </div>
+                        <div class="form-box">
+                            <label for="about-what">What this is about?</label><br>
+                            <input type="radio" name="aboutwhat" value="Question" id="aboutwhat"
+                                onclick="checkhiring('no')" required> Question
+                            <input type="radio" name="aboutwhat" value="Comment" id="aboutwhat"
+                                onclick="checkhiring('no')" required> Comment
+                            <input type="radio" name="aboutwhat" value="Hiring" id="aboutwhat"
+                                onclick="checkhiring('yes')" required> Hiring
+                        </div>
+                    </div>
+                    <div class="form-box" id="hourly_price_div">
+                        <label for="hourly-price">Hourly Price* </label> <small>(in CAD)</small>
+                        <input type="number" pattern="^[0-9]+,?[0-9]{0,2}$" name="hourlyprice"
+                            placeholder="Enter Hourly Price" id="hourly_price">
+                    </div>
+                    <div class="fullbox-textarea">
+                        <div class="form-box">
+                            <label for="message">Message*</label>
+                            <textarea cols="30" rows="7" name="message" placeholder="Enter You Message" id="message"
+                                required></textarea>
+                        </div>
+                        <div class="form-box">
+                            <label for="suggestion">Suggestion*</label><br>
+                            <textarea cols="30" rows="7" name="suggestion"
+                                placeholder="Enter suggestion based on previous work" id="suggestion"
+                                required></textarea>
+                        </div>
+                    </div>
+                    <div class="fullbox">
+                        <div class="submit-button">
+                            <button type="submit" class="submit-button" id="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+        </section>
+        <!-- Contact section end  -->
+
+        <!-- footer section start  -->
+        <footer>
+            <div class="footer">
+                <!-- footer part 1 start -->
+                <div class="footer-start">
+                    <h2>Location</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.5383882416404!2d-79.3283021845354!3d43.80319077911645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d3a2e553b665%3A0x7f98e9d522db280c!2s22%20Brookshire%20Blvd%2C%20Scarborough%2C%20ON%20M1W%201X5%2C%20Canada!5e0!3m2!1sen!2sin!4v1671002906541!5m2!1sen!2sin"
+                        width="400" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <!-- footer part 1 end  -->
+                <!-- footer part 2 start  -->
+                <div class="footer-mid">
+                    <h2>Address Information</h2>
+                    <i class="fa fa-map-marker"></i> <span>Address</span>
+                    <p>22, Brookshire Boulevard Scarborough</p><br>
+                    <i class="fa fa-envelope"></i> <span>Email</span>
+                    <p>rarora64@myseneca.ca</p><br>
+                    <i class="fa fa-phone"></i> <span>Contact</span>
+                    <p>+1 437 239 3036</p>
+                </div>
+                <!-- footer part 2 end  -->
+                <!-- footer part 3 start  -->
+                <div class="footer-end">
+                    <h2>Seneca honesty statement</h2>
+                    <p>With campuses across the Greater Toronto Area, Seneca offers degrees, diplomas and certificates
+                        renowned for their quality and respected by employers. Combining the highest academic standards
+                        with practical, hands-on learning, expert teaching faculty and the latest technology ensures
+                        Seneca graduates are career-ready.</p>
+                </div>
+                <!-- footer part 3 end  -->
+            </div>
+        </footer>
+        <!-- bottom footer start  -->
+        <div class="bottom-footer">
+            <h6>&copy; Copyright @ 2022 </h6>
+        </div>
+        <!-- bottom footer end  -->
+        <!-- footer section end  -->
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"
+        integrity="sha256-c9vxcXyAG4paArQG3xk6DjyW/9aHxai2ef9RpMWO44A=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
